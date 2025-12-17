@@ -155,26 +155,374 @@ footer {
 <section id="projects">
   <h2>Exam tasks</h2>
   <div class="task-grid">
-    <a href="https://raroza01-web.github.io/task-1/" class="button" target="_blank">Task 1</a>
-    <a href="https://raroza01-web.github.io/exam/task2/" class="button" target="_blank">Task 2</a>
-    <a href="https://raroza01-web.github.io/exam/task3/" class="button" target="_blank">Task 3</a>
-    <a href="https://raroza01-web.github.io/exam/task4/" class="button" target="_blank">Task 4</a>
-    <a href="https://raroza01-web.github.io/exam/task5/" class="button" target="_blank">Task 5</a>
-    <a href="https://raroza01-web.github.io/exam/task6/" class="button" target="_blank">Task 6</a>
-    <a href="https://raroza01-web.github.io/exam/task7/" class="button" target="_blank">Task 7</a>
-    <a href="https://raroza01-web.github.io/exam/task8/" class="button" target="_blank">Task 8</a>
-    <a href="https://raroza01-web.github.io/exam/task9/" class="button" target="_blank">Task 9</a>
-    <a href="https://raroza01-web.github.io/exam/task10/" class="button" target="_blank">Task 10</a>
-    <a href="https://raroza01-web.github.io/exam/task11/" class="button" target="_blank">Task 11</a>
-    <a href="https://raroza01-web.github.io/exam/task12/" class="button" target="_blank">Task 12</a>
-    <a href="https://raroza01-web.github.io/exam/task13/" class="button" target="_blank">Task 13</a>
-    <a href="https://raroza01-web.github.io/exam/task14/" class="button" target="_blank">Task 14</a>
-    <a href="https://raroza01-web.github.io/exam/task15/" class="button" target="_blank">Task 15</a>
-    <a href="https://raroza01-web.github.io/exam/task16/" class="button" target="_blank">Task 16</a>
-    <a href="https://raroza01-web.github.io/exam/task17/" class="button" target="_blank">Task 17</a>
-    <a href="https://raroza01-web.github.io/exam/task18/" class="button" target="_blank">Task 18</a>
-    <a href="https://raroza01-web.github.io/exam/task19/" class="button" target="_blank">Task 19</a>
-    <a href="https://raroza01-web.github.io/exam/task20/" class="button" target="_blank">Task 20</a>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SET B - All Tasks</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; }
+    h1 { text-align: center; color: #4CAF50; }
+    .task { background-color: #f0f0f0; margin: 10px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .task-header { padding: 15px 20px; cursor: pointer; font-weight: bold; transition: background 0.3s; }
+    .task-header:hover { background-color: #4CAF50; color: white; }
+    .task-content { display: none; padding: 15px 20px; background-color: white; }
+    pre { background: #eee; padding: 15px; border-radius: 8px; overflow-x: auto; }
+    input, button { padding: 8px 12px; margin-top: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>SET B - All Tasks</h1>
+
+  <!-- Task 1 -->
+  <div class="task">
+    <div class="task-header">Task 1: Reverse words in a sentence</div>
+    <div class="task-content">
+      <input type="text" id="sentence1" placeholder="Type a sentence..." size="50">
+      <button onclick="reverseWords('sentence1','result1')">Reverse Words</button>
+      <pre id="result1"></pre>
+    </div>
+  </div>
+
+  <!-- Task 2 -->
+  <div class="task">
+    <div class="task-header">Task 2: Extract first and last character from a string</div>
+    <div class="task-content">
+      <input type="text" id="sentence2" placeholder="Type a string..." size="50">
+      <button onclick="firstLastChar('sentence2','result2')">Extract</button>
+      <pre id="result2"></pre>
+    </div>
+  </div>
+
+  <!-- Task 3 -->
+  <div class="task">
+    <div class="task-header">Task 3: Find longest word from sentence</div>
+    <div class="task-content">
+      <input type="text" id="sentence3" placeholder="Type a sentence..." size="50">
+      <button onclick="longestWord('sentence3','result3')">Find Longest Word</button>
+      <pre id="result3"></pre>
+    </div>
+  </div>
+
+  <!-- Task 4 -->
+  <div class="task">
+    <div class="task-header">Task 4: Convert string to Title Case</div>
+    <div class="task-content">
+      <input type="text" id="sentence4" placeholder="Type a sentence..." size="50">
+      <button onclick="titleCase('sentence4','result4')">Convert</button>
+      <pre id="result4"></pre>
+    </div>
+  </div>
+
+  <!-- Task 5 -->
+  <div class="task">
+    <div class="task-header">Task 5: Replace a word in a string</div>
+    <div class="task-content">
+      <input type="text" id="sentence5" placeholder="Type a sentence..." size="50">
+      <input type="text" id="oldWord5" placeholder="Old word">
+      <input type="text" id="newWord5" placeholder="New word">
+      <button onclick="replaceWord('sentence5','oldWord5','newWord5','result5')">Replace</button>
+      <pre id="result5"></pre>
+    </div>
+  </div>
+
+  <!-- Task 6 -->
+  <div class="task">
+    <div class="task-header">Task 6: Count vowels in a string</div>
+    <div class="task-content">
+      <input type="text" id="sentence6" placeholder="Type a sentence..." size="50">
+      <button onclick="countVowels('sentence6','result6')">Count Vowels</button>
+      <pre id="result6"></pre>
+    </div>
+  </div>
+
+  <!-- Task 7 -->
+  <div class="task">
+    <div class="task-header">Task 7: Create an array from user popup input</div>
+    <div class="task-content">
+      <button onclick="createArray('result7')">Create Array</button>
+      <pre id="result7"></pre>
+    </div>
+  </div>
+
+  <!-- Task 8 -->
+  <div class="task">
+    <div class="task-header">Task 8: Display third element from array</div>
+    <div class="task-content">
+      <input type="text" id="array8" placeholder="Enter comma-separated values">
+      <button onclick="thirdElement('array8','result8')">Show 3rd Element</button>
+      <pre id="result8"></pre>
+    </div>
+  </div>
+
+  <!-- Task 9 -->
+  <div class="task">
+    <div class="task-header">Task 9: Find index of a given element in array</div>
+    <div class="task-content">
+      <input type="text" id="array9" placeholder="Enter comma-separated values">
+      <input type="text" id="elem9" placeholder="Element to find">
+      <button onclick="findIndex('array9','elem9','result9')">Find Index</button>
+      <pre id="result9"></pre>
+    </div>
+  </div>
+
+  <!-- Task 10 -->
+  <div class="task">
+    <div class="task-header">Task 10: Function: check even/odd</div>
+    <div class="task-content">
+      <input type="number" id="num10" placeholder="Enter a number">
+      <button onclick="checkEvenOdd('num10','result10')">Check</button>
+      <pre id="result10"></pre>
+    </div>
+  </div>
+
+  <!-- Task 11 -->
+  <div class="task">
+    <div class="task-header">Task 11: Function: sum of array values</div>
+    <div class="task-content">
+      <input type="text" id="array11" placeholder="Enter comma-separated values">
+      <button onclick="sumArray('array11','result11')">Sum Array</button>
+      <pre id="result11"></pre>
+    </div>
+  </div>
+
+  <!-- Task 12 -->
+  <div class="task">
+    <div class="task-header">Task 12: Popup: allow only 10 digits input</div>
+    <div class="task-content">
+      <button onclick="tenDigits('result12')">Enter 10 digits</button>
+      <pre id="result12"></pre>
+    </div>
+  </div>
+
+  <!-- Task 13 -->
+  <div class="task">
+    <div class="task-header">Task 13: Popup: detect numeric vs string and apply allowed operations</div>
+    <div class="task-content">
+      <button onclick="detectNumString('result13')">Check Input</button>
+      <pre id="result13"></pre>
+    </div>
+  </div>
+
+  <!-- Task 14 -->
+  <div class="task">
+    <div class="task-header">Task 14: Validate: password min length rule</div>
+    <div class="task-content">
+      <input type="password" id="pass14" placeholder="Enter password">
+      <button onclick="validatePass('pass14','result14')">Validate</button>
+      <pre id="result14"></pre>
+    </div>
+  </div>
+
+  <!-- Task 15 -->
+  <div class="task">
+    <div class="task-header">Task 15: Validate: required field not empty</div>
+    <div class="task-content">
+      <input type="text" id="field15" placeholder="Enter something">
+      <button onclick="validateField('field15','result15')">Validate</button>
+      <pre id="result15"></pre>
+    </div>
+  </div>
+
+  <!-- Task 16 -->
+  <div class="task">
+    <div class="task-header">Task 16: Signup form with submit/reset</div>
+    <div class="task-content">
+      <form onsubmit="submitForm(event,'result16')" onreset="resetForm('result16')">
+        <input type="text" placeholder="Username" required><br><br>
+        <input type="password" placeholder="Password" required><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+      <pre id="result16"></pre>
+    </div>
+  </div>
+
+  <!-- Task 17 -->
+  <div class="task">
+    <div class="task-header">Task 17: Display form output in a table format</div>
+    <div class="task-content">
+      <p>Example table output will appear here.</p>
+    </div>
+  </div>
+
+  <!-- Task 18 -->
+  <div class="task">
+    <div class="task-header">Task 18: Display object after update</div>
+    <div class="task-content">
+      <p>Example updated object output.</p>
+    </div>
+  </div>
+
+  <!-- Task 19 -->
+  <div class="task">
+    <div class="task-header">Task 19: Countdown timer using setInterval with Start/Pause/Reset</div>
+    <div class="task-content">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="resetTimer()">Reset</button>
+      <pre id="timer19">00:00</pre>
+    </div>
+  </div>
+
+  <!-- Task 20 -->
+  <div class="task">
+    <div class="task-header">Task 20: Hover event: change button style on mouse over</div>
+    <div class="task-content">
+      <button id="hoverBtn20">Hover me</button>
+      <script>
+        const hoverBtn20 = document.getElementById('hoverBtn20');
+        hoverBtn20.addEventListener('mouseover', () => hoverBtn20.style.backgroundColor='#4CAF50');
+        hoverBtn20.addEventListener('mouseout', () => hoverBtn20.style.backgroundColor='');
+      </script>
+    </div>
+  </div>
+
+  <script>
+    // Toggle task content
+    const headers = document.querySelectorAll('.task-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    // Task 1 function
+    function reverseWords(inputId, resultId) {
+      const input = document.getElementById(inputId).value;
+      document.getElementById(resultId).textContent = input.split(' ').reverse().join(' ');
+    }
+
+    // Task 2
+    function firstLastChar(inputId, resultId) {
+      const input = document.getElementById(inputId).value;
+      const result = input.length ? input[0] + input[input.length-1] : '';
+      document.getElementById(resultId).textContent = result;
+    }
+
+    // Task 3
+    function longestWord(inputId, resultId) {
+      const words = document.getElementById(inputId).value.split(' ');
+      let max = '';
+      words.forEach(w => { if(w.length>max.length) max=w; });
+      document.getElementById(resultId).textContent = max;
+    }
+
+    // Task 4
+    function titleCase(inputId, resultId) {
+      const str = document.getElementById(inputId).value;
+      const res = str.split(' ').map(w=>w[0].toUpperCase()+w.slice(1)).join(' ');
+      document.getElementById(resultId).textContent = res;
+    }
+
+    // Task 5
+    function replaceWord(sentenceId, oldId, newId, resultId) {
+      const str = document.getElementById(sentenceId).value;
+      const oldWord = document.getElementById(oldId).value;
+      const newWord = document.getElementById(newId).value;
+      document.getElementById(resultId).textContent = str.replace(oldWord,newWord);
+    }
+
+    // Task 6
+    function countVowels(inputId, resultId) {
+      const str = document.getElementById(inputId).value;
+      const count = (str.match(/[aeiouAEIOU]/g)||[]).length;
+      document.getElementById(resultId).textContent = count;
+    }
+
+    // Task 7
+    function createArray(resultId){
+      const arr = [];
+      for(let i=0;i<5;i++){
+        const val = prompt("Enter value "+(i+1));
+        arr.push(val);
+      }
+      document.getElementById(resultId).textContent = arr.join(', ');
+    }
+
+    // Task 8
+    function thirdElement(arrayId,resultId){
+      const arr = document.getElementById(arrayId).value.split(',');
+      document.getElementById(resultId).textContent = arr[2] || 'No third element';
+    }
+
+    // Task 9
+    function findIndex(arrayId,elemId,resultId){
+      const arr = document.getElementById(arrayId).value.split(',');
+      const el = document.getElementById(elemId).value;
+      document.getElementById(resultId).textContent = arr.indexOf(el);
+    }
+
+    // Task 10
+    function checkEvenOdd(numId,resultId){
+      const n = parseInt(document.getElementById(numId).value);
+      document.getElementById(resultId).textContent = isNaN(n)?'Invalid':(n%2===0?'Even':'Odd');
+    }
+
+    // Task 11
+    function sumArray(arrayId,resultId){
+      const arr = document.getElementById(arrayId).value.split(',').map(Number);
+      const sum = arr.reduce((a,b)=>a+b,0);
+      document.getElementById(resultId).textContent = sum;
+    }
+
+    // Task 12
+    function tenDigits(resultId){
+      let input;
+      do{
+        input = prompt("Enter exactly 10 digits");
+      } while(!/^\d{10}$/.test(input));
+      document.getElementById(resultId).textContent = input;
+    }
+
+    // Task 13
+    function detectNumString(resultId){
+      const val = prompt("Enter something");
+      const type = isNaN(val)?'String':'Number';
+      document.getElementById(resultId).textContent = "Input type: "+type;
+    }
+
+    // Task 14
+    function validatePass(passId,resultId){
+      const val = document.getElementById(passId).value;
+      document.getElementById(resultId).textContent = val.length>=6?'Valid':'Too short';
+    }
+
+    // Task 15
+    function validateField(fieldId,resultId){
+      const val = document.getElementById(fieldId).value;
+      document.getElementById(resultId).textContent = val?'OK':'Field required';
+    }
+
+    // Task 16
+    function submitForm(e,resultId){
+      e.preventDefault();
+      document.getElementById(resultId).textContent = "Form submitted!";
+    }
+    function resetForm(resultId){
+      document.getElementById(resultId).textContent = "Form reset!";
+    }
+
+    // Task 19 - Countdown Timer
+    let timerInterval, timerCount=0, timerRunning=false;
+    function startTimer(){
+      if(timerRunning) return;
+      timerRunning=true;
+      timerInterval = setInterval(()=>{
+        timerCount++;
+        const min = String(Math.floor(timerCount/60)).padStart(2,'0');
+        const sec = String(timerCount%60).padStart(2,'0');
+        document.getElementById('timer19').textContent = `${min}:${sec}`;
+      },1000);
+    }
+    function pauseTimer(){ clearInterval(timerInterval); timerRunning=false; }
+    function resetTimer(){ clearInterval(timerInterval); timerCount=0; timerRunning=false; document.getElementById('timer19').textContent='00:00'; }
+
+  </script>
+</body>
+</html>
 </div>
 
 <style>
