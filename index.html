@@ -154,29 +154,56 @@ footer {
 <!-- PROJECTS & TASKS -->
 <section id="projects">
   <h2>Exam tasks</h2>
-  <div class="tasks">
-    <div class="task">Task 1</div>
-    <div class="task">Task 2</div>
-    <div class="task">Task 3</div>
-    <div class="task">Task 4</div>
-    <div class="task">Task 5</div>
-    <div class="task">Task 6</div>
-    <div class="task">Task 7</div>
-    <div class="task">Task 8</div>
-    <div class="task">Task 9</div>
-    <div class="task">Task 10</div>
-    <div class="task">Task 11</div>
-    <div class="task">Task 12</div>
-    <div class="task">Task 13</div>
-    <div class="task">Task 14</div>
-    <div class="task">Task 15</div>
-    <div class="task">Task 16</div>
-    <div class="task">Task 17</div>
-    <div class="task">Task 18</div>
-    <div class="task">Task 19</div>
-    <div class="task">Task 20</div>
-  </div>
-</section>
+  <div class="task-grid">
+    <a href="https://raroza01-web.github.io/task-1/" class="button" target="_blank">Task 1</a>
+    <a href="https://raroza01-web.github.io/exam/task2/" class="button" target="_blank">Task 2</a>
+    <a href="https://raroza01-web.github.io/exam/task3/" class="button" target="_blank">Task 3</a>
+    <a href="https://raroza01-web.github.io/exam/task4/" class="button" target="_blank">Task 4</a>
+    <a href="https://raroza01-web.github.io/exam/task5/" class="button" target="_blank">Task 5</a>
+    <a href="https://raroza01-web.github.io/exam/task6/" class="button" target="_blank">Task 6</a>
+    <a href="https://raroza01-web.github.io/exam/task7/" class="button" target="_blank">Task 7</a>
+    <a href="https://raroza01-web.github.io/exam/task8/" class="button" target="_blank">Task 8</a>
+    <a href="https://raroza01-web.github.io/exam/task9/" class="button" target="_blank">Task 9</a>
+    <a href="https://raroza01-web.github.io/exam/task10/" class="button" target="_blank">Task 10</a>
+    <a href="https://raroza01-web.github.io/exam/task11/" class="button" target="_blank">Task 11</a>
+    <a href="https://raroza01-web.github.io/exam/task12/" class="button" target="_blank">Task 12</a>
+    <a href="https://raroza01-web.github.io/exam/task13/" class="button" target="_blank">Task 13</a>
+    <a href="https://raroza01-web.github.io/exam/task14/" class="button" target="_blank">Task 14</a>
+    <a href="https://raroza01-web.github.io/exam/task15/" class="button" target="_blank">Task 15</a>
+    <a href="https://raroza01-web.github.io/exam/task16/" class="button" target="_blank">Task 16</a>
+    <a href="https://raroza01-web.github.io/exam/task17/" class="button" target="_blank">Task 17</a>
+    <a href="https://raroza01-web.github.io/exam/task18/" class="button" target="_blank">Task 18</a>
+    <a href="https://raroza01-web.github.io/exam/task19/" class="button" target="_blank">Task 19</a>
+    <a href="https://raroza01-web.github.io/exam/task20/" class="button" target="_blank">Task 20</a>
+</div>
+
+<style>
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.button {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+</style>
+
 
 <!-- CONTACT -->
 <section id="contact">
