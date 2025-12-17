@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roza | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif; }
+    body {
+      background: linear-gradient(135deg, #FFD84D, #FFB347, #FFE699);
+      color: #000;
+      line-height:1.6;
+    }
+
+    nav {
+      background: #000;
+      padding: 15px 30px;
+      display: flex;
+      gap: 25px;
+      position: sticky;
+      top:0;
+      z-index:100;
+    }
+    nav a {
+      color: #FFD84D;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      padding: 5px 0;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* Dropdown */
+    .dropdown { position: relative; }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left:0;
+      background: #222;
+      min-width: 220px;
+      border-radius: 8px;
+      overflow: hidden;
+      z-index: 1000;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: #FFD84D;
+      text-decoration: none;
+    }
+    .dropdown-content a:hover { background: #333; }
+    .dropdown:hover .dropdown-content { display: block; }
+
+    section { max-width: 1000px; margin: auto; padding: 60px 40px; }
+    h1,h2,h3 { margin-bottom: 20px; }
+    
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+      border: 4px solid #000;
+    }
+
+    .tasks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+    }
+    .task {
+      background: #000;
+      color: #FFD84D;
+      padding: 15px;
+      border-radius: 12px;
+      text-align:center;
+      transition: 0.3s;
+    }
+    .task:hover { transform: scale(1.05); }
+
+    .contact a { color: #000; font-weight:bold; text-decoration:none; }
+    .contact a:hover { text-decoration:underline; }
+
+    footer {
+      background: #000;
+      color: #FFD84D;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#about">About Me</a>
+  <a href="#projects">Projects & Tasks</a>
+  <a href="#contact">Contact</a>
+
+  <div class="dropdown">
+    <a href="#">Certificate ▼</a>
+    <div class="dropdown-content">
+      <a href="https://www.sololearn.com/certificates/CC-HKSHVB4C" target="_blank">Certificate</a>
+      <a href="https://docs.google.com/presentation/d/15wyUn12FK0y1A8KB3ZiXK8lHUeaUEMw0eB4kj5YMYys/edit?usp=sharing" target="_blank">Certificate Presentation</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">Mini Project ▼</a>
+    <div class="dropdown-content">
+      <a href="https://v0-physics-inspiration-platform.vercel.app/" target="_blank">Mini Project</a>
+      <a href="https://docs.google.com/presentation/d/1q6PFaeLf1T3jtOPuwaNEBaIOca1HZKe-vgdsrfUnFFU/edit?usp=sharing" target="_blank">Mini Project Presentation</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ABOUT ME -->
+<section id="about">
+  <h1>Roza</h1>
+  <h2>Student | Portfolio</h2>
+
+  <div class="about">
+    <img src="Roza_pic.jpg" alt="Roza photo">
+    <div>
+      <p>I am a student interested in scientific research and web technologies. This portfolio presents my academic projects and practical tasks.</p>
+
+      <h3>Scientific Projects</h3>
+      <ul>
+        <li>Phase transitions in unusual conditions (magnetic/electric fields, extreme temperatures)</li>
+        <li>Physical processes influencing earthquakes</li>
+        <li>Complex numbers and functions of a complex variable</li>
+      </ul>
+
+      <h3>Technologies</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS & TASKS -->
+<section id="projects">
+  <h2>Projects & Tasks</h2>
+  <div class="tasks">
+    <div class="task">Task 1</div>
+    <div class="task">Task 2</div>
+    <div class="task">Task 3</div>
+    <div class="task">Task 4</div>
+    <div class="task">Task 5</div>
+    <div class="task">Task 6</div>
+    <div class="task">Task 7</div>
+    <div class="task">Task 8</div>
+    <div class="task">Task 9</div>
+    <div class="task">Task 10</div>
+    <div class="task">Task 11</div>
+    <div class="task">Task 12</div>
+    <div class="task">Task 13</div>
+    <div class="task">Task 14</div>
+    <div class="task">Task 15</div>
+    <div class="task">Task 16</div>
+    <div class="task">Task 17</div>
+    <div class="task">Task 18</div>
+    <div class="task">Task 19</div>
+    <div class="task">Task 20</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></p>
+  <p>Instagram: <a href="https://instagram.com/rozamynn_" target="_blank">@rozamynn_</a></p>
+  <p>GitHub: <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></p>
+</section>
+
+<footer>
+  © 2025 Roza | Portfolio
+</footer>
+
+</body>
+</html>
